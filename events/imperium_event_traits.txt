@@ -1,0 +1,35 @@
+namespace = leader
+
+#Adeptus Mechanicus Augmentations
+country_event = {
+	id = imperiumaugmentation.1
+	location = event_target:current_location
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = {
+			if = {
+				limit = {
+					exists = planet
+					has_civic = civic_imperium 
+				}
+				planet = {
+					save_event_target_as = current_location
+				}
+				add_trait = leader_trait_scientist_cyborg
+			}
+			if = {
+				limit = {
+					exists = fleet
+					has_civic = civic_imperium 
+				}
+				fleet = {
+					random_owned_ship = {
+						save_event_target_as = current_location
+					}
+				}
+			}
+		}
+	}
+}

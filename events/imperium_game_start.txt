@@ -1,0 +1,38 @@
+namespace = imperium_start
+### Empire init - add technologies and resources
+country_event = {
+	id = imperium_start.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { 
+			limit = { 
+				has_civic = civic_imperium 
+			} 
+			give_technology = { message = no tech = tech_gene_seed_purification }
+			give_technology = { message = no tech = tech_psionic_theory }
+		}
+	}
+}
+
+#set Imperium humans and other humans as one species
+event = {
+    id = imperium_start.2
+    hide_window = yes
+    fire_only_once = yes
+ 
+    immediate = {
+        random_country = {
+            limit = { is_species_class = IMPERIUM }
+            species = { save_event_target_as = imperium_species }
+        }
+        every_country = {
+            limit = {
+                is_species_class = HUM
+                species = { not = { is_same_value = event_target:imperium_species } }
+            }
+            species = { set_species_identity = event_target:imperium_species }
+        }
+    }
+}
