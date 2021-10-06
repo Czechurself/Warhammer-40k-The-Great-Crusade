@@ -1,0 +1,17 @@
+# This file handles all startup triggers for the Imperium.
+# Events are definied in their own folder
+
+# called during empire initialization when starting a new game
+# scope: country
+empire_init_add_technologies = {
+	events = {
+		imperium_start.1
+	}
+}
+
+# scope: none
+on_game_start = {
+	events = {
+		imperium_start.2
+	}
+}

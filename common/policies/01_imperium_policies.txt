@@ -1,0 +1,266 @@
+orbital_bombardment = {
+
+	potential = {
+		OR = {
+			is_country_type = default
+			is_country_type = vol
+		}
+	}
+	
+	option = {
+		name = "orbital_bombardment_selective"
+		policy_flags = {
+			orbital_bombardment_selective
+		}
+		
+		AI_weight = {
+			modifier = {
+				factor = 0
+				NOR = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+		}
+	}
+	option = {
+		name = "orbital_bombardment_indiscriminate"
+		
+		policy_flags = {
+			orbital_bombardment_indiscriminate
+		}
+		modifier = {}
+		
+		valid = {
+			NOR = {	
+				has_ethic = "ethic_pacifist" 
+				has_ethic = "ethic_fanatic_pacifist" 
+			}
+		}
+	}
+	option = {
+		name = "orbital_bombardment_armageddon"
+		
+		potential = {
+			OR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_machine_terminator
+				has_valid_civic = civic_imperium
+			}
+		}
+		
+		policy_flags = {
+			orbital_bombardment_armageddon
+		}
+		modifier = {}
+		
+		AI_weight = {
+			modifier = {
+				factor = 10
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_machine_terminator
+					has_valid_civic = civic_imperium
+				}
+			}
+		}
+	}
+}
+
+artificial_intelligence_policy = {
+
+	potential = {	
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+		can_set_ai_policy = yes
+	}
+	
+	option = {
+		name = "ai_outlawed"
+
+		valid = {
+			NOR = {
+				has_ethic = "ethic_materialist"
+				has_ethic = "ethic_fanatic_materialist"
+			}			
+		}
+	
+        potential = {
+			OR = {
+				has_valid_civic = civic_imperium
+			}
+		}
+	
+		policy_flags = {
+			ai_outlawed
+		}
+		
+		AI_weight = {
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_materialist"
+					has_ethic = "ethic_fanatic_materialist"
+				}
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					has_ethic = "ethic_spiritualist"
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "ai_servitude"
+
+		valid = {
+			always = yes
+		}
+		
+		policy_flags = {
+			ai_servitude
+		}
+		
+		AI_weight = {
+			modifier = {
+				factor = 5
+				has_valid_ai_personality = yes
+				has_ai_personality_behaviour = robot_exploiter
+			}	
+			modifier = {
+				factor = 2
+				has_valid_ai_personality = yes
+				has_ai_personality_behaviour = robot_liberator
+			}				
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_spiritualist"
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "ai_full_rights"
+
+		valid = {
+			NOR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+			NOT = { has_policy_flag = robots_outlawed }
+		}
+		
+		policy_flags = {
+			ai_full_rights
+		}
+		
+		modifier = {}
+		
+		AI_weight = {
+			modifier = {
+				factor = 5
+				has_valid_ai_personality = yes
+				has_ai_personality_behaviour = robot_liberator
+			}		
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_spiritualist"
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
+			}
+		}
+	}
+}
+
+purge = {
+	potential = {
+		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+	}
+	
+	option = {
+		name = "purge_not_allowed"
+		
+		valid = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			NOT = { has_valid_civic = "civic_fanatic_purifiers" }	
+            NOT = { has_valid_civic = "civic_imperium" }			
+		}
+		
+		policy_flags = {
+			purge_not_allowed
+		}
+	}
+	
+	option = {
+		name = "purge_displacement_only"
+		
+		policy_flags = {
+			purge_displacement_only
+		}
+
+		modifier = {}
+		
+		valid = {
+			NOR = { 
+				is_subject_type = signatory
+				has_ethic = ethic_gestalt_consciousness
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+			NOT = { has_valid_civic = "civic_fanatic_purifiers" }
+		}
+		
+		AI_weight = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_valid_ai_personality = yes
+				has_ai_personality_behaviour = multispecies
+			}
+		}
+	}	
+	
+	option = {
+		name = "purge_allowed"
+		
+		policy_flags = {
+			purge_allowed
+		}
+		modifier = {}
+		
+		valid = {		
+			NOT = { is_subject_type = signatory }
+			OR = {
+				has_ethic = ethic_gestalt_consciousness
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}			
+		}
+		
+		AI_weight = {
+			factor = 10
+			modifier = {
+				factor = 50
+				has_ethic = ethic_gestalt_consciousness
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+			modifier = {
+				factor = 0
+				has_valid_ai_personality = yes
+				NOT = { has_ai_personality_behaviour = purger }
+			}
+		}
+	}
+}

@@ -1,0 +1,205 @@
+# Generated species derive their names from here
+
+### ORK
+
+ORK = {
+	hellstompahs = {
+		name = "Hellstompah"
+		plural = "Hellstompahs"
+		home_planet = Rax'Thalaki
+		home_system = Thalakin
+		name_list = "ORK1"
+	}
+	
+	hedstabbas = {
+		name = "Hedstabba"
+		plural = "Hedstabbas"
+		home_planet = Qlak
+		home_system = Qlakidoq
+		name_list = "ORK1"
+	}
+	
+	gross_tide = {
+		name = "Gross Tide"
+		plural = "Gross Tide"
+		home_planet = Tuxica
+		home_system = Bos'Tuxica
+		name_list = "ORK1"
+	}
+
+	mek_krushas = {
+		name = "Mek Krusha"
+		plural = "Mek Krushas"
+		home_planet = Zuif
+		home_system = Zuffur
+		name_list = "ORK1"
+	}
+	
+	cleava_boyz = {
+		name = "Cleava Boy"
+		plural = "Cleava Boyz"
+		home_planet = Matal
+		home_system = Matalill
+		name_list = "ORK1"
+	}
+
+	da_green_kroosade = {
+		name = "Da Green Kroosader"
+		plural = "Da Green Kroosade"
+		home_planet = Oxinac
+		home_system = Oxinac'Vela
+		name_list = "ORK1"
+	}
+
+	dakka_bozzes = {
+		name = "Dakka Bozzes"
+		plural = "Dakka Bozzes"
+		home_planet = Yadra
+		home_system = Yadruk
+		name_list = "ORK1"
+	}
+
+	flame_krushas = {
+		name = "Flame Krusha"
+		plural = "Flame Krushas"
+		home_planet = Nharr
+		home_system = Nharrbo
+		name_list = "ORK1"
+	}
+	
+	ice_kuttahs = {
+		name = "Ice Kuttah"
+		plural = "Ice Kuttahs"
+		home_planet = Zukai
+		home_system = Zukai'Mondor
+		name_list = "ORK1"
+	}
+	
+	gretchen_gobblas = {
+		name = "Gretchen Gobbla"
+		plural = "Gretchen Gobblas"
+		home_planet = Lokken
+		home_system = "Lokken Jak"
+		name_list = "ORK1"
+	}
+	
+	nid_smashas = {
+		name = "Nid Smasha"
+		plural = "Nid Smashas"
+		home_planet = Netraxia
+		home_system = Netraxia'Asaka
+		name_list = "ORK1"
+	}
+	
+	grave_diggas = {
+		name = "Grave Digga"
+		plural = "Grave Diggas"
+		home_planet = Xania
+		home_system = "Xani Nadih"
+		name_list = "ORK1"
+	}
+	
+	lazi_gitz = {
+		name = "Lazy Git"
+		plural = "Lazy Gitz"
+		home_planet = Orossi
+		home_system = Orossi-Huivac
+		name_list = "ORK1"
+	}
+	
+	axe_eatahs = {
+		name = "Axe Eatah"
+		plural = "Axe Eatahs"
+		home_planet = Ipa'Go
+		home_system = "Ipa'Go Tryll"
+		name_list = "ORK1"
+	}
+	
+	green_killahs = {
+		name = "Green Killah"
+		plural = "Green Killahs"
+		home_planet = Fexkla
+		home_system = Fexklansiga
+		name_list = "ORK1"
+	}
+	
+	tusk_tuggas = {
+		name = "Tusk Tuggah"
+		plural = "Tusk Tuggahs"
+		home_planet = Tuxka
+		home_system = Tuxkalli
+		name_list = "ORK1"
+	}
+	
+	good_boyz = {
+		name = "Good Boy"
+		plural = "Good Boyz"
+		home_planet = Vak-Raxxa
+		home_system = Du-Raxxa-Nax
+		name_list = "ORK1"
+	}
+	
+	trak_breakaz = {
+		name = "Trak Breaka"
+		plural = "Trak Breakaz"
+		home_planet = Rak'Thalak'Nak
+		home_system = "Rak'Nak'Thax"
+		name_list = "ORK1"
+	}
+	
+	boom_bombas = {
+		name = "Boom Bomba"
+		plural = "Boom Bombas"
+		home_planet = Sheraka
+		home_system = Acir'Raka
+		name_list = "ORK1"
+	}
+	
+	grim_krakhas = {
+		name = "Grim Krakha"
+		plural = "Grim Krahas"
+		home_planet = Deex
+		home_system = Xandraee
+		name_list = "ORK1"
+	}
+	
+	murdurahz = {
+		name = Murdurah
+		plural = Merdurahz
+		home_planet = Rothak
+		home_system = Vsem-Klack
+		name_list = "ORK1"
+	}
+	
+	muzzlahs = {
+		name = Muzzlah
+		plural = Muzzlahs
+		home_planet = Ushu
+		home_system = "Uskal Opeshal"
+		name_list = "ORK1"
+	}
+	
+	jaw_breakahs = {
+		name = "Jaw Breakah"
+		plural = "Jaw Breakahs"
+		home_planet = Xu'Koka
+		home_system = Xu'Kokallij
+		name_list = "ORK1"
+	}
+	
+	krownahs = {
+		name = "Krownah"
+		plural = "Krownahs"
+		home_planet = Lestrall
+		home_system = Qol'Lest
+		name_list = "ORK1"
+	}
+	
+	blood_boilahs = {
+		name = "Blood Boilah"
+		plural = "Blood Boilahs"
+		home_planet = Lox'Ungrak
+		home_system = Lox'Ungrak'O
+		name_list = "ORK1"
+	}
+}

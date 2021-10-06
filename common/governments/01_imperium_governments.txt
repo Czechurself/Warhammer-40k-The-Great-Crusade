@@ -1,0 +1,126 @@
+## Imperium Governments
+# Imperium Oligarchy
+
+gov_imperium_oligarchy = {
+	ruler_title = RT_HIGH_LORD
+	ruler_title_female = RT_HIGH_LADY
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = auth_oligarchic
+		has_valid_civic = civic_imperium
+	}
+
+	weight = {
+		base = 2000
+	}
+}
+
+# Imperium Senatorum Imperialis
+gov_senatorum_imperialis = {
+	ruler_title = RT_CONSUL_IMPERIALIS
+	ruler_title_female = RT_CONSUL_IMPERIALIS
+	
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			OR = {
+				leader_class = admiral
+				leader_class = general
+				leader_class = governor
+			}
+		}
+	}
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = auth_democratic
+		has_valid_civic = civic_imperium
+	}
+
+	weight = {
+		base = 2000
+	}
+}
+
+# Regency Imperium
+gov_imperium_regent = {
+	ruler_title = RT_LORD_REGENT
+	ruler_title_female = RT_LADY_REGENT
+	heir_title = HT_HIGH_LORD
+	heir_title_female = HT_HIGH_LADY
+
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = auth_imperial
+		has_valid_civic = civic_imperium
+	}
+
+	weight = {
+		base = 2000
+	}
+}
+
+# Imperium Autocracy
+gov_imperium_autocracy = {
+	ruler_title = RT_HIGH_LORD
+	ruler_title_female = RT_HIGH_LADY
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = auth_dictatorial
+		has_valid_civic = civic_imperium
+	}
+
+	weight = {
+		base = 2000
+	}
+}
+
+# Imperium Military Autocracy
+gov_imperium_military_autocracy = {
+	ruler_title = RT_LORD_SOLAR
+	ruler_title_female = RT_LADY_SOLAR
+	
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+	}
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = auth_dictatorial
+		has_valid_civic = civic_imperium
+	}
+
+	weight = {
+		base = 2000
+		modifier = {
+			factor = 1.10
+			OR = {
+				has_valid_civic = civic_distinguished_admiralty
+				has_valid_civic = civic_nationalistic_zeal
+			}
+	}
+}
