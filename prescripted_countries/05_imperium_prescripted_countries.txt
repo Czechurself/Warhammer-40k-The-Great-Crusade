@@ -1,0 +1,65 @@
+"Imperium of Man"
+={
+	key="Imperium of Man"
+	ship_prefix=""
+	species={
+		class="IMPERIUM"
+		portrait="imperium"
+		name="Human"
+		plural="Humans"
+		adjective="Human"
+		name_list="Imperium"
+		trait="trait_latent_psionic"
+		trait="trait_adaptive"
+		trait="trait_nomadic"
+		trait="trait_wasteful"
+	}
+	name="Imperium of Man"
+	adjective="Imperium"
+	authority="auth_oligarchic"
+	
+	flags={	imperium custom_start_screen }
+	
+	government="gov_imperium_oligarchy"
+	planet_name="Holy Terra"
+	planet_class="pc_continental"
+	system_name="Sol"
+	initializer="sol_system_initializer"
+	graphical_culture="wain_01"
+	city_graphical_culture="wain_01"
+	empire_flag={
+		icon={
+			category="Imperium"
+			file="AquilaImperialis.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Franz Dressen"
+		portrait="imperium_male_01"
+		texture=0
+		hair=7
+		clothes=0
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	room="personality_democratic_crusaders_room"
+	spawn_enabled=no
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	ethic="ethic_spiritualist"
+	civics={
+		"civic_imperium"
+		"civic_distinguished_admiralty"
+	}
+}
