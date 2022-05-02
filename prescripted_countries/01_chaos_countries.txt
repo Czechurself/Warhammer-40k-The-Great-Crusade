@@ -1,0 +1,725 @@
+alpha_legion = {
+	name = "Alpha Legion"
+	adjective = "PRESCRIPTED_adjective_alpha_legion"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_alpha_legion"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_alpha_legion"
+		name = "PRESCRIPTED_species_name_alpha_legion"
+		plural = "PRESCRIPTED_species_plural_alpha_legion"
+		adjective = "PRESCRIPTED_species_adjective_alpha_legion"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "chaos_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_xx" "civic_extremly_secretive" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_alpha_legion"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_alpha_legion chaos_undivided }
+	planet_name = "PRESCRIPTED_planet_name_alpha_legion"
+	planet_class = "pc_continental"
+	system_name = "PRESCRIPTED_system_name_alpha_legion"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_AlphaLegion.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"turquoise"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_alpha_legion"
+		gender = male
+		portrait = "CHAOS_AlphaLegion_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_alpha_legion"
+	}
+}
+
+black_legion = {
+	name = "Black Legion"
+	adjective = "PRESCRIPTED_adjective_black_legion"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_black_legion"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_black_legion"
+		name = "PRESCRIPTED_species_name_black_legion"
+		plural = "PRESCRIPTED_species_plural_black_legion"
+		adjective = "PRESCRIPTED_species_adjective_black_legion"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "chaos_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_xvi" "civic_chaos_undivided" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_black_legion"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_black_legion chaos_undivided }
+	planet_name = "PRESCRIPTED_planet_name_black_legion"
+	planet_class = "pc_blackstonefortress"
+	system_name = "PRESCRIPTED_system_name_black_legion"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_BlackLegion.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_black_legion"
+		gender = male
+		portrait = "CHAOS_BlackLegion_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_black_legion"
+	}
+}
+
+death_guard = {
+	name = "Death Guard"
+	adjective = "PRESCRIPTED_adjective_death_guard"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_death_guard"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_death_guard"
+		name = "PRESCRIPTED_species_name_death_guard"
+		plural = "PRESCRIPTED_species_plural_death_guard"
+		adjective = "PRESCRIPTED_species_adjective_death_guard"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "nurgle_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_xiv" "civic_nurgle_cult" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_death_guard"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_death_guard nurgle }
+	planet_name = "PRESCRIPTED_planet_name_death_guard"
+	planet_class = "pc_daemonn"
+	system_name = "PRESCRIPTED_system_name_death_guard"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_DeathGuards.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"dark_green"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_death_guard"
+		gender = male
+		portrait = "CHAOS_DeathGuard_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_death_guard"
+	}
+}
+
+emperor_children = {
+	name = "Emperor Children"
+	adjective = "PRESCRIPTED_adjective_emperor_children"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_emperor_children"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_emperor_children"
+		name = "PRESCRIPTED_species_name_emperor_children"
+		plural = "PRESCRIPTED_species_plural_emperor_children"
+		adjective = "PRESCRIPTED_species_adjective_emperor_children"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "slaanesh_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_iii" "civic_slaanesh_cult" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_emperor_children"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_emperor_children slaanesh }
+	planet_name = "PRESCRIPTED_planet_name_emperor_children"
+	planet_class = "pc_daemons"
+	system_name = "PRESCRIPTED_system_name_emperor_children"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_EmperorChildren.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"pink"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_emperor_children"
+		gender = male
+		portrait = "CHAOS_EmperorChildren_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_emperor_children"
+	}
+}
+
+iron_warrior = {
+	name = "Iron Warriors"
+	adjective = "PRESCRIPTED_adjective_iron_warrior"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_iron_warrior"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_iron_warrior"
+		name = "PRESCRIPTED_species_name_iron_warrior"
+		plural = "PRESCRIPTED_species_plural_iron_warrior"
+		adjective = "PRESCRIPTED_species_adjective_iron_warrior"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "chaos_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_iv" "civic_chaos_undivided" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_iron_warrior"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_iron_warrior chaos_undivided }
+	planet_name = "PRESCRIPTED_planet_name_iron_warrior"
+	planet_class = "pc_daemon"
+	system_name = "PRESCRIPTED_system_name_iron_warrior"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_IronWarriors.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"dark_grey"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_iron_warrior"
+		gender = male
+		portrait = "CHAOS_IronWarrior_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_iron_warrior"
+	}
+}
+
+night_lords = {
+	name = "Night Lords"
+	adjective = "PRESCRIPTED_adjective_night_lords"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_night_lords"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_night_lords"
+		name = "PRESCRIPTED_species_name_night_lords"
+		plural = "PRESCRIPTED_species_plural_night_lords"
+		adjective = "PRESCRIPTED_species_adjective_night_lords"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "chaos_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_viii" "civic_chaos_undivided" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_night_lords"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_night_lords chaos_undivided }
+	planet_name = "PRESCRIPTED_planet_name_night_lords"
+	planet_class = "pc_forge_ring3"
+	system_name = "PRESCRIPTED_system_name_night_lords"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_NightLords.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"dark_blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_night_lords"
+		gender = male
+		portrait = "CHAOS_NightLords_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_night_lords"
+	}
+}
+
+red_corsairs = {
+	name = "Red Corsairs"
+	adjective = "PRESCRIPTED_adjective_red_corsairs"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_red_corsairs"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_red_corsairs"
+		name = "PRESCRIPTED_species_name_red_corsairs"
+		plural = "PRESCRIPTED_species_plural_red_corsairs"
+		adjective = "PRESCRIPTED_species_adjective_red_corsairs"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "chaos_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_chaos_corsairs" "civic_warrior_culture" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_red_corsairs"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_red_corsairs chaos_undivided }
+	planet_name = "PRESCRIPTED_planet_name_red_corsairs"
+	planet_class = "pc_daemon"
+	system_name = "PRESCRIPTED_system_name_red_corsairs"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_BadabTyrant.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_red_corsairs"
+		gender = male
+		portrait = "CHAOS_RedCorsairs_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_red_corsairs"
+	}
+}
+
+thousand_sons = {
+	name = "Thousand Sons"
+	adjective = "PRESCRIPTED_adjective_thousand_sons"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_thousand_sons"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_thousand_sons"
+		name = "PRESCRIPTED_species_name_thousand_sons"
+		plural = "PRESCRIPTED_species_plural_thousand_sons"
+		adjective = "PRESCRIPTED_species_adjective_thousand_sons"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "tzeentch_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_xv" "civic_tzeentch_cult" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_thousand_sons"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_thousand_sons tzeentch }
+	planet_name = "PRESCRIPTED_planet_name_thousand_sons"
+	planet_class = "pc_daemont"
+	system_name = "PRESCRIPTED_system_name_thousand_sons"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_ThousandSons.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_thousand_sons"
+		gender = male
+		portrait = "CHAOS_ThousandSons_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_thousand_sons"
+	}
+}
+
+word_bearer = {
+	name = "Word Bearers"
+	adjective = "PRESCRIPTED_adjective_word_bearer"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_word_bearer"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_word_bearer"
+		name = "PRESCRIPTED_species_name_word_bearer"
+		plural = "PRESCRIPTED_species_plural_word_bearer"
+		adjective = "PRESCRIPTED_species_adjective_word_bearer"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "chaos_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_xvii" "civic_chaos_undivided" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_word_bearer"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_word_bearer chaos_undivided }
+	planet_name = "PRESCRIPTED_planet_name_word_bearer"
+	planet_class = "pc_daemon"
+	system_name = "PRESCRIPTED_system_name_word_bearer"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_WordBearers.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"red_orange"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_word_bearer"
+		gender = male
+		portrait = "CHAOS_WordBearer_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_word_bearer"
+	}
+}
+
+world_eater = {
+	name = "World Eaters"
+	adjective = "PRESCRIPTED_adjective_world_eater"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_world_eater"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_world_eater"
+		name = "PRESCRIPTED_species_name_world_eater"
+		plural = "PRESCRIPTED_species_plural_world_eater"
+		adjective = "PRESCRIPTED_species_adjective_world_eater"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+	
+	room = "khorne_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_xii" "civic_khorne_cult" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_world_eater"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_world_eater khorne }
+	planet_name = "PRESCRIPTED_planet_name_world_eater"
+	planet_class = "pc_forge_ring3"
+	system_name = "PRESCRIPTED_system_name_world_eater"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_WorldEaters.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"burgundy"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_world_eater"
+		gender = male
+		portrait = "CHAOS_WorldEater_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_world_eater"
+	}
+}
+
+sons_of_malice = {
+	name = "Sons of Malice"
+	adjective = "PRESCRIPTED_adjective_sons_of_malice"
+	spawn_enabled = always # yes / no / always
+	ignore_portrait_duplication = yes	
+	ship_prefix = "PRESCRIPTED_ship_prefix_sons_of_malice"
+	
+	species = {
+		class = "CHA"
+		portrait = "chaos_sons_of_malice"
+		name = "PRESCRIPTED_species_name_sons_of_malice"
+		plural = "PRESCRIPTED_species_plural_sons_of_malice"
+		adjective = "PRESCRIPTED_species_adjective_sons_of_malice"
+		name_list = "CHAOS1"
+		trait = "trait_solitary"
+		trait = "trait_intelligent"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+	}
+
+	room = "chaos_room"
+	
+	authority = "auth_chaos"
+	civics = { "civic_malice_cult" "civic_warrior_culture" "civic_barbaric_despoilers" }
+	government = "gov_anarcho_tribalism"
+	origin = "origin_sons_of_malice"
+
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	flags = { humanoid chaos_empire the_sons_of_malice malice }
+	planet_name = "PRESCRIPTED_planet_name_sons_of_malice"
+	planet_class = "pc_spacehulk"
+	system_name = "PRESCRIPTED_system_name_sons_of_malice"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "armada"
+			file = "TX_UI_Logo_SubFaction_SMC_SonsOfMalice.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"grey"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_sons_of_malice"
+		gender = male
+		portrait = "CHAOS_SonsOfMalice_ruler"
+		texture = 0
+		clothes = 0
+		leader_class = ruler
+		ruler_title = "PRESCRIPTED_ruler_title_sons_of_malice"
+	}
+}
