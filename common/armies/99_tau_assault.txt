@@ -1,0 +1,323 @@
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+# collateral_damage was not part of old file so set to vanilla values
+# war_exhaustion was not part of old file so set to 0.0, this is WARHAMMER 40K and losing a few milion souls don't matter ;)
+
+fire_warriors = {
+	damage = 1.40
+	health = 3.40
+	morale = 1.55
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 90
+	
+	icon_frame = 36
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 10
+		}
+
+		upkeep = {
+			energy = 2.3
+		}
+	}
+	
+	prerequisites = { "tech_pulse_rifle" "tech_combat_uniform" "tech_shas_ui" }
+
+	potential = {
+		owner = { has_country_flag = tau_empire }
+	}
+}
+
+guevesa = {
+	damage = 1.0
+	health = 4.0
+	morale = 2.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 90
+	
+	icon_frame = 144
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 15
+		}
+
+		upkeep = {
+			energy = 2.0
+		}
+	}
+	
+	prerequisites = { "tech_shas_vesa" "tech_pulse_carbine" "tech_guevesa_armor" }
+
+	potential = {
+		#planet = { has_planet_flag = human_planet }
+		owner = { has_country_flag = tau_empire }
+	}
+}
+
+demiurg = {
+	damage = 2.0
+	health = 3.0
+	morale = 1.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 90
+	
+	icon_frame = 49
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 20
+		}
+
+		upkeep = {
+			energy = 2.0
+		}
+	}
+	
+	prerequisites = { "tech_demiurg_gun" "tech_demiurg_armor" "tech_energy_drill" }
+	
+	potential = {
+		#planet = { has_planet_flag = demiurg_planet }
+		owner = { has_country_flag = tau_empire }
+	}
+}
+
+vespid = {
+	damage = 1.55
+	health = 3.35
+	morale = 1.35
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 90
+	
+	icon_frame = 37
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 20
+		}
+
+		upkeep = {
+			energy = 2.3
+		}
+	}
+	
+	prerequisites = { "tech_vespid_strain_leader" "tech_neutron_blaster" "tech_communion_helm" }
+	
+	potential = {
+		#planet = { has_planet_flag = vespid_planet }
+		owner = { has_country_flag = tau_empire }
+	}
+}
+
+kroot = {
+	damage = 1.35
+	health = 3.55
+	morale = 1.35
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 90
+	
+	icon_frame = 38
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 10
+		}
+
+		upkeep = {
+			energy = 2.3
+		}
+	}
+	
+	prerequisites = { "tech_kroot_gun" "tech_kroot_rifle" "tech_jeap_jump" }
+
+	potential = {
+		#planet = { has_planet_flag = kroot_planet }
+		owner = { has_country_flag = tau_empire }
+	}
+}
+
+xv8_crisis_battlesuits = {
+	damage = 1.55
+	health = 3.55
+	morale = 1.75
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 110
+	
+	icon_frame = 39
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 500
+			electronics = 50
+			military_goods = 10
+		}
+
+		upkeep = {
+			energy = 2.5
+		}
+	}
+	
+	prerequisites = { "tech_blue_flamer" "tech_fusion_blaster" "tech_misslepod" }
+	
+	allow = {
+		has_building = building_vehicle_beacon
+	}
+	
+	potential = {
+		owner = { has_country_flag = tau_empire }
+	}
+}
+
+xv25_stealthsuit = {
+	damage = 1.80
+	health = 3.80
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 150
+	
+	icon_frame = 40
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 600
+			electronics = 50
+			military_goods = 20
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_shas_vre" "tech_fusion_cascade" "tech_infiltrationing" }
+	
+	allow = {
+		has_building = building_vehicle_beacon
+	}
+	
+	potential = {
+		owner = { has_country_flag = tau_empire }
+	}
+}
+
+xv88_broadside_battlesuit = {
+	damage = 4.2
+	health = 6.0
+	morale = 4.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 360
+	
+	icon_frame = 41
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 750
+			electronics = 50
+			military_goods = 20
+		}
+
+		upkeep = {
+			energy = 4
+		}
+	}
+	
+	prerequisites = { "tech_plasma_rifle" "tech_particle_accelerator" "tech_misslepod" }
+	
+	allow = {
+		has_building = building_vehicle_beacon
+	}
+	
+	potential = {
+		owner = { has_country_flag = tau_empire }
+	}
+}
+
+xv104_riptide_battlesuit = {
+	damage = 5.2
+	health = 6.2
+	morale = 6.2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 500
+	
+	icon_frame = 42
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 950
+			electronics = 100
+			military_goods = 20
+		}
+
+		upkeep = {
+			energy = 5.5
+		}
+	}
+	
+	prerequisites = { "tech_ion_accelerator" "tech_riptide_shield_generators" "tech_nova_reactor" }
+	
+	allow = {
+		has_building = building_vehicle_beacon
+	}
+	
+	potential = {
+		owner = { has_country_flag = tau_empire }
+	}
+}
+
+hammerhead_gunship = {
+	damage = 2.1
+	health = 4.1
+	morale = 2.1
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 160
+	
+	icon_frame = 43
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 250
+			electronics = 50
+			military_goods = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+	
+	prerequisites = { "tech_dual_anti_grav_jet_propulsion_motive_system" "tech_heavy_burst_cannon" "tech_rail_rifle" }
+	
+	allow = {
+		has_building = building_vehicle_beacon
+	}
+	
+	potential = {
+		owner = { has_country_flag = tau_empire }
+	}
+}

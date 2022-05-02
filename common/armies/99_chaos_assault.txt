@@ -1,0 +1,505 @@
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+# collateral_damage was not part of old file so set to vanilla values
+# war_exhaustion was not part of old file so set to 0.0, this is WARHAMMER 40K and losing a few milion souls don't matter ;)
+
+cultists = {
+	damage = 1.15
+	health = 3.15
+	morale = 1.15
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 90
+	
+	icon_frame = 98
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 10
+		}
+
+		upkeep = {
+			energy = 1.2
+		}
+	}
+	
+	prerequisites = { "tech_blighted_corrupt_bolter" }
+
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+plague_zombies = {
+	damage = 0.5
+	health = 6.7
+	morale = 10.0
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0											
+	time = 110
+	
+	icon_frame = 101
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 5
+		}
+
+		upkeep = {
+			energy = 3.5
+		}
+	}
+	
+	prerequisites = { "tech_plague_zombies" }
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+bloodcrusher = {
+	damage = 1.35
+	health = 3.35
+	morale = 1.35
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0											
+	time = 90
+	
+	icon_frame = 99
+	
+	resources = {
+		category = armies
+		cost = {
+			gods_favor = 10
+		}
+
+		upkeep = {
+			energy = 3.3
+		}
+	}
+	
+	prerequisites = { "tech_daemon_army" "tech_war_beasts" }
+
+	allow = {
+		has_building = building_daemon_pit
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+chaos_spawn = {
+	damage = 1.55
+	health = 7.55
+	morale = 1.55
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0											
+	time = 110
+	
+	icon_frame = 100
+	
+	resources = {
+		category = armies
+		cost = {
+			gods_favor = 5
+		}
+
+		upkeep = {
+			energy = 3.5
+		}
+	}
+	
+	prerequisites = { "tech_chaos_spawn" "tech_battle_mutations" }
+	
+	allow = {
+		has_building = building_daemon_pit
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+defilers = {
+	damage = 5.0
+	health = 4.5
+	morale = 3.0
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0											
+	time = 150
+	
+	icon_frame = 102
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 350
+			electronics = 150
+			military_goods = 200
+			gods_favor = 10
+		}
+
+		upkeep = {
+			energy = 3.5
+		}
+	}
+	
+	prerequisites = { "tech_defilers_visage" "tech_lord_iron_halo" "tech_turret_lascannons" }
+	
+	allow = {
+		has_building = building_daemon_pit
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+chaos_dreadnaught = {
+	damage = 6.0
+	health = 5.0
+	morale = 5.0
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0											
+	time = 200
+	
+	icon_frame = 103
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 350
+			electronics = 150
+			military_goods = 200
+			gene_seed = 1
+		}
+
+		upkeep = {
+			energy = 3.8
+		}
+	}
+	
+	prerequisites = { "tech_dreadnought_double_claw" "tech_dread_missile_launcher" "tech_turret_lascannons" }
+
+	allow = {
+		has_building = building_machine_pit
+	
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "chaos_dreadnaught_count" 
+					value = 10
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "chaos_dreadnaught_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "chaos_dreadnaught_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+chaos_predator = {
+	damage = 5
+	health = 4
+	morale = 2
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0											
+	time = 200
+	
+	icon_frame = 104
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 750
+			electronics = 150
+			military_goods = 100
+			gene_seed = 5
+		}
+
+		upkeep = {
+			energy = 3.5
+		}
+	}
+	
+	prerequisites = { "tech_predator_lascannons" "tech_predator_mark_of_khorne" "tech_predator_mark_of_nurgle" }
+	
+	allow = {
+		has_building = building_machine_pit
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+bloodletters = {
+	damage = 4.5
+	health = 5.5
+	morale = 2.5
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0											
+	time = 360
+	
+	icon_frame = 105
+	
+	resources = {
+		category = armies
+		cost = {
+			gods_favor = 5
+		}
+
+		upkeep = {
+			energy = 6
+		}
+	}
+	
+	prerequisites = { "tech_daemon_army" "tech_sword_of_flame" "tech_daemon_commander" }
+		
+	allow = {
+		OR = {
+			has_building = building_daemon_pit
+			
+			planet = {
+				OR = {
+					is_planet_class = pc_daemon
+					is_planet_class = pc_daemont
+					is_planet_class = pc_daemons
+					is_planet_class = pc_daemonn
+				}
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+nurglings = {
+	damage = 1.0
+	health = 3.5
+	morale = 1.0
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0											
+	time = 110
+	
+	icon_frame = 106
+	
+	resources = {
+		category = armies
+		cost = {
+			food = 10
+		}
+
+		upkeep = {
+			energy = 3.4
+		}
+	}
+	
+	prerequisites = { "tech_nurglings" "tech_swarm_of_flies" "tech_vomit" }
+	
+	allow = {
+		OR = {
+			has_building = building_daemon_pit
+			
+			planet = {
+				is_planet_class = pc_daemonn
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+havocs = {
+	damage = 2.65
+	health = 4.65
+	morale = 1.65
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0
+	time = 400
+	
+	icon_frame = 107
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 15
+			gene_seed = 5
+		}
+
+		upkeep = {
+			energy = 4.0
+		}
+	}
+	
+	prerequisites = { "tech_inferno_armor" "tech_lascannon" "tech_autocannon" "tech_grenade_launchers" }
+	
+	allow = {
+		has_building = building_chaos_temple
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+noise_marines = {
+	damage = 2.65
+	health = 5.65
+	morale = 5.65
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0
+	time = 450
+	
+	icon_frame = 108
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 20
+			gene_seed = 10
+		}
+
+		upkeep = {
+			energy = 4.4
+		}
+	}
+	
+	prerequisites = { "tech_robes_of_torment" "tech_blastmaster" "tech_combi_flamer" "tech_traitor_sidearm" }
+	
+	allow = {
+		has_building = building_chaos_temple
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+plague_marines = {
+	damage = 3.65
+	health = 8.65
+	morale = 5.65
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0
+	time = 500
+	
+	icon_frame = 135
+	
+	resources = {
+		category = armies
+		cost = {
+			military_goods = 30
+			gene_seed = 20
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	prerequisites = { "tech_plaguemarine_armor" "tech_plaguemarine_plague_sword" "tech_pestilent_spewer" "tech_power_fist_nurgle" }
+	
+	allow = {
+		has_building = building_chaos_temple
+	}
+	
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
+
+great_unclear_one = {
+	damage = 6.2
+	health = 20.0
+	morale = 10.0
+	collateral_damage = 1.00												
+	war_exhaustion = 0.0											
+	time = 600
+	
+	icon_frame = 109
+	
+	resources = {
+		category = armies
+		cost = {
+			gods_favor = 200
+		}
+
+		upkeep = {
+			gods_favor = 1
+		}
+	}
+	
+	prerequisites = { "tech_daemon_army" "tech_swarm_of_flies" "tech_vomit" "tech_great_summoning" }
+	
+	allow = {
+		OR = {
+			has_building = building_daemon_pit
+			
+			AND = {
+				has_building = building_nurgle_castle
+				planet = {
+					is_planet_class = pc_daemonn
+				}
+			}
+		}
+	
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "great_unclear_one_count" 
+					value = 1
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "great_unclear_one_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "great_unclear_one_count" 
+				value = -1
+			}
+		}
+	}
+
+	potential = {
+		owner = { has_country_flag = chaos_empire }
+	}
+}
